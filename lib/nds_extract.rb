@@ -35,7 +35,11 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  list_of_directors(source)
+  directors_names = list_of_directors(source)
+  while i < directors_names.length do
+    directors_totals(source[i])
+    i+= 1
+  end
   directors_totals(source)
   # Should use methods:
   # 1. directors_totals: returns a Hash of { dir_name => gross }
