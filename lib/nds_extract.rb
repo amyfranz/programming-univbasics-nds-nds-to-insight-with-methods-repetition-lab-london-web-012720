@@ -41,11 +41,10 @@ def total_gross(source)
   gross = 0
   i = 0
   while i < directors_gross.length do
-    puts directors_gross[director_name[i]]
     gross += directors_gross[director_name[i]]
     i+= 1
   end
-  puts gross
+  return gross
 end
 
 
