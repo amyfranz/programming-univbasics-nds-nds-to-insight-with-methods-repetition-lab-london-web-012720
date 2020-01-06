@@ -35,14 +35,14 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  list_of_directors(source)
+  director_name = list_of_directors(source)
   directors_gross = directors_totals(source)
   puts directors_gross
   gross = 0
   i = 0
   while i < directors_gross.length do
-    puts directors_gross[list_of_directors[i]]
-    gross += directors_gross[list_of_directors[i]]
+    puts directors_gross[director_name[i]]
+    gross += directors_gross[director_name[i]]
     i+= 1
   end
   puts gross
